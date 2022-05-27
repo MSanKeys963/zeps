@@ -1,0 +1,34 @@
+I"G<h1 class="fs-9" id="zarr-enhancement-proposals-zeps">Zarr Enhancement Proposals (ZEPs)</h1>
+
+<p class="fs-6 fw-300">Community Feedback Process for Zarr Specifications.</p>
+
+<p><a href="https://zarr.dev/" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">Propose a new ZEP</a>
+<a href="https://github.com/zarr-developers/zeps" class="btn fs-5 mb-4 mb-md-0">View it on GitHub</a></p>
+
+<hr />
+
+<p>ZEP stands for Zarr Enhancement Proposal. A ZEP is a design document providing
+information to the Zarr community, describing a modification or enhancement of
+the <a href="https://zarr-specs.readthedocs.io/en/latest/">Zarr specifications</a>, a new
+feature for its processes or environment. The ZEP should provide specific proposed
+changes to the Zarr specification and a narrative rationale for the specification
+changes.</p>
+
+<p>We intend ZEPs to be the primary mechanism for evolving the spec, collecting
+community input on major issues and documenting the design decision that has
+gone into Zarr.</p>
+
+<hr />
+
+<h3 id="contributing">Contributing</h3>
+
+<p>If you wish to contribute to Zarr’s codebase, propose a new ZEP(s), website, blog
+posts or in any way, please visit Zarr’s GitHub <a href="https://github.com/zarr-developers/">here</a>.
+You can discuss the change you want to see by opening an issue in the appropriate
+repository, or if the issue is already present, feel free to submit a pull request.</p>
+
+<h3 id="code-of-conduct">Code of Conduct</h3>
+
+<p>ZEPs are governed by Zarr Community’s
+<a href="https://github.com/zarr-developers/.github/blob/main/CODE_OF_CONDUCT.md">CODE OF CONDUCT</a>.</p>
+:ET
