@@ -2,193 +2,193 @@
     "doc": "ZEP0000",
     "title": "ZEP 0 — Purpose and process",
     "content": "Author: Sanket Verma svsanketverma5@gmail.com . Status: Active . Type: Process . Created: 2022-14-03 . ",
-    "url": "http://localhost:4000/zeps/zeps/active/ZEP0000.html#zep-0--purpose-and-process",
-    "relUrl": "/zeps/active/ZEP0000.html#zep-0--purpose-and-process"
+    "url": "http://localhost:4000/zeps/active/ZEP0000.html#zep-0--purpose-and-process",
+    "relUrl": "/active/ZEP0000.html#zep-0--purpose-and-process"
   },"1": {
     "doc": "ZEP0000",
     "title": "What is ZEP?",
     "content": "ZEP stands for Zarr Enhancement Proposal. A ZEP is a design document providing information to the Zarr community, describing a modification or enhancement of the Zarr specification, a new feature for its processes or environment. The ZEP should provide specific proposed changes to the Zarr specification and a narrative rationale for the specification changes. We intend ZEPs to be the primary mechanism for evolving the spec, collecting community input on major issues and documenting the design decision that has gone into Zarr. In addition, the ZEP author is responsible for building consensus within the community and documenting dissenting opinions. Because the ZEPs are maintained as text files in a versioned repository, their revision history is the historical record of the feature proposal. WHERE: . | Developers refer to contributors and maintainers of the project | User(s) refers to an individual or group of individuals or the broader community using the project in any way. | . ",
-    "url": "http://localhost:4000/zeps/zeps/active/ZEP0000.html#what-is-zep",
-    "relUrl": "/zeps/active/ZEP0000.html#what-is-zep"
+    "url": "http://localhost:4000/zeps/active/ZEP0000.html#what-is-zep",
+    "relUrl": "/active/ZEP0000.html#what-is-zep"
   },"2": {
     "doc": "ZEP0000",
     "title": "ZEP audience",
     "content": "The typical primary audience for ZEPs is the developers working on Zarr and its various implementations, the Zarr steering council as well as the Zarr community. The broader Zarr community may also choose to use the process to document expected feature additions and to manage complex design coordination problems that require collaboration across multiple projects. ",
-    "url": "http://localhost:4000/zeps/zeps/active/ZEP0000.html#zep-audience",
-    "relUrl": "/zeps/active/ZEP0000.html#zep-audience"
+    "url": "http://localhost:4000/zeps/active/ZEP0000.html#zep-audience",
+    "relUrl": "/active/ZEP0000.html#zep-audience"
   },"3": {
     "doc": "ZEP0000",
     "title": "ZEP types",
     "content": "Specification ZEP . Specification ZEPs deal with the changes related to Zarr Specifications. The SPEC ZEP (abbreviation of Specification ZEP) for now introduces changes in the core specification of Zarr. The changes related to core specification follow a strict and thorough review process and should be adopted by everyone in the Zarr community. | Core protocol ZEP | . Describes a ZEP which involves changes in the core specification of Zarr. Core protocol ZEPs (commonly known as Core ZEPs) are a part of SPEC ZEPs and apply to Zarr Specifications and its various implementations under the zarr_implementations GitHub repo. The core protocol ZEPs should be adopted by every implementation of Zarr and, in general, the overall Zarr community. Core ZEPs must go through a thorough review process, including involvement, discussion, and voting from the author of the proposed ZEP, Zarr Steering Council, author(s) of various Zarr implementations, and open-source projects/research groups using Zarr and the general Zarr community. The general advice is that everyone should be made aware of changes introduced by core ZEPs. Core protocol ZEPs require community consensus, and developers or users are typically not free to ignore them. Note: Currently, Specification ZEPs only deal with the core specification of Zarr. The scope of SPEC ZEPs will be extended in the future. Informational ZEP . Describes a ZEP design issue or provides general guidelines or information to the Zarr community but does not propose a new feature. Informational ZEPs do not necessarily represent Zarr community consensus or recommendation, so users and implementers are free to ignore informational ZEPS or follow their advice. Process ZEP . Describes a new process around Zarr and its implementations or proposes a change to (or an event in) a process. They may propose an implementation, but not to the Zarr’s specification or its implementations; they require community consensus; unlike informational ZEPs, they are more than recommendations, and developers or users are typically not free to ignore them. Examples include procedures, guidelines, changes to the decision-making process, and changes to the tools or environment used in Zarr’s specification development. Any meta-ZEP is also considered a Process ZEP. ",
-    "url": "http://localhost:4000/zeps/zeps/active/ZEP0000.html#zep-types",
-    "relUrl": "/zeps/active/ZEP0000.html#zep-types"
+    "url": "http://localhost:4000/zeps/active/ZEP0000.html#zep-types",
+    "relUrl": "/active/ZEP0000.html#zep-types"
   },"4": {
     "doc": "ZEP0000",
     "title": "ZEP Workflow",
     "content": "The ZEP process begins with a new idea for Zarr. It is highly recommended that a single ZEP contain a single key proposal or new idea. Small enhancements or patches often don’t need a ZEP and can be injected into the Zarr development workflow with a pull request to the Zarr ZEP repo. The more focused the ZEP, the more successful it tends to be. If in doubt, split your ZEP into several well-focused ones. Each ZEP must have a champion – someone who writes the ZEP using the style and format described below, shepherds the discussions in the appropriate forums, and attempts to build community consensus around the idea. The ZEP champion (a.k.a. Author) should first attempt to ascertain whether the idea is suitable for a ZEP. Posting to Gitter or creating an issue on the community repository or posting on the organization discussions are the best ways to go about doing this. The ZEP champion is the lead author of the ZEP. A ZEP should have a lead author and can have multiple co-author(s). Vetting an idea publicly before going as far as writing a ZEP is meant to save the potential author time. Asking the Zarr community first if an idea is original helps prevent too much time being spent on something that is guaranteed to be rejected based on prior discussion. It also helps to make sure the idea applies to the entire community and not just the author. Just because an idea sounds good to the author does not mean it will work for most people. Once the champion has asked the Zarr community whether an idea has any chance of acceptance, a draft ZEP should be presented to the appropriate venue mentioned below. This allows the author to flesh out the draft ZEP to make it properly formatted, of high quality, and address initial concerns about the proposal. After the PR for the ZEP is in place, a post should be made on the GitHub organisation discussions, containing the sections up to “Backward compatibility” to limit discussion there to usage and impact. Discussion on the pull request will have a broader scope, including details of implementation. Spec ZEPs consist of two parts, a PR to the zarr-specs repository containing changes to the spec and a narrative document explaining the need, importance and use-case for the change. It is also highly recommended that the specification ZEP be accompanied by an implementation PR in at least one of the repositories represented in the zarr_implementations. Submitting a ZEP . For Spec ZEPs, the proposal should be submitted as a draft ZEP via two GitHub pull requests, one to the zarr-developers/zep repo and the other to the zarr-specs repository. The first PR should contain the narrative text of the ZEP and should be submitted in the zep repository with the name zep-&lt;n&gt;.rst where &lt;n&gt; is an appropriately assigned four-digit number. The draft ZEP must use the ZEP X - Template and Instructions file. The second PR should contain actual changes and should be submitted in the zarr-specs repository. That PR repository should mention the assigned four-digit ZEP number from the zarr-developers/zep repository. For ZEPs other than spec, the proposal should be submitted as a draft ZEP via a GitHub pull request to the zarr-developers/zep repository with the name zep-&lt;n&gt;.rst where &lt;n&gt; is an appropriately assigned four-digit number (e.g., zep-0000.rst). The draft ZEP must use the ZEP X - Template and Instructions file. A few points to consider while submitting your ZEP: . | It should sound complete. The ideas must make technical sense. | The title should accurately describe the content. | The ZEP’s language (spelling, grammar, sentence structure etc.) and code style should be correct and conformant. | . The Zarr Steering Council and the Zarr Implementations Council will not unreasonably deny publication of a ZEP. Reasons for denying ZEP include duplication of effort, being technically unsound, not providing proper motivation or addressing backwards compatibility, or not taking care of Zarr CODE OF CONDUCT. Discussing a ZEP . As soon as the draft ZEP is committed to the ZEP repository, the author(s) should create a discussion thread for the ZEP to provide a central place to discuss and review its contents. The ZEP author(s) may select the GitHub discussion feature in the organisation discussions or the ZEP repository and similarly use the discussion feature in the zarr-specs repository for specification ZEPs. Alternatively, the author(s) may open a new issue in the Zarr community repository or start the discussion in the Zarr Gitter channel. The discussion regarding the ZEP should follow Zarr’s CODE OF CONDUCT at all times. ZEP authors are responsible for collecting community feedback on a ZEP. However, to avoid long-winded and open-ended discussions, strategies such as soliciting private or more narrowly-tailored feedback in the early design phase, collaborating with other community members with expertise in the ZEP’s subject matter, and picking appropriately-specialised discussion for the ZEP’s topic should be considered. ZEP authors should use their discretion here. Once the ZEP is committed to the ZEP repository, substantive issues should generally be discussed on the canonical public thread, as opposed to private channels or unrelated venues. This ensures everyone can follow and contribute, avoids fragmenting the discussion, and makes sure it is fully considered as part of the ZEP review process. Comments, support, concerns and other feedback on this designated thread are a critical part when reviewing the ZEP. Review and Resolution . The possible paths of the status of ZEPs are as follows: . All ZEPs should be created with the Draft status. Eventually, after the discussion, there may be a consensus that the ZEP should be accepted - see the next section for details. At this point, the status becomes Accepted. Once a Specification ZEP has been Accepted, the second PR which was submitted in the zarr-specs repository must be merged. After that, the status will be changed to Final. To allow the gathering of additional design and interface feedback before committing to long term stability for specification change or standard library API, ZEP may also be marked as “Provisional”. This is short for “Provisionally Accepted” and indicates that the proposal has been accepted for inclusion in the reference implementation or storage specification, but additional user feedback is needed before the full design can be considered “Final”. Unlike regular accepted ZEPs, provisionally accepted ZEPs may still be Rejected or Withdrawn even after the related changes have been included in a Zarr release. Wherever possible, it is considered preferable to reduce the scope of a proposal to avoid the need to rely on the “Provisional” status (e.g. by deferring some features to later ZEPs), as this status can lead to version compatibility challenges in the wider Zarr ecosystem. A ZEP can also be assigned status Deferred. The ZEP author or Zarr Steering Council or Zarr Implementations Council can assign the ZEP this status when no progress is being made on the ZEP. A ZEP can also be Rejected. Perhaps, after all, is said and done it was not a good idea. It is still important to have a record of this fact. The Withdrawn status is similar—it means that the ZEP author themselves has decided that the ZEP is a bad idea, or has accepted that a competing proposal is a better alternative. When a ZEP is Accepted, Rejected, or Withdrawn, the ZEP should be updated accordingly. In addition to updating the status field, at the very least the Resolution header should be added with a link to the relevant link of the discussion. ZEPs can also be Superseded by a different ZEP, rendering the original obsolete. The Replaced-By and Replaces headers should be added to the original and new ZEPs respectively. Process ZEPs may also have a status of Active if they are never meant to be completed, e.g. ZEP 0 (this ZEP). How does a ZEP become accepted? . A ZEP is Accepted by the consensus of all interested contributors. We need a concrete way to tell whether the agreement has been reached. For Core ZEPs: . We believe Core ZEPs are of utmost importance and should follow a thorough review before acceptance. Core ZEPs introduce changes in the core specification, which are necessary for every other implementation and everyone in the general community to follow. The Zarr Steering Council and Implementations Council closely review the Core ZEPs, while the author(s) should simultaneously engage the community in their ZEP at several discussion forums mentioned previously. The ZSC and ZIC would take community consensus into account while taking the final decision on the Core ZEPs. Author(s) should ensure that the involvement and discussion form the consensus on the ZEP from the author of various Zarr implementations, open-source projects/research groups using Zarr, the general Zarr community, and anyone else they, ZSC and ZIC think should be included in the discussions. The Core ZEPs are accepted by: . | Unanimous approval of the Zarr Steering Council . | Majority approval of the Zarr Implementations Council . | . Approval indicates that implementation plans to implement the new spec features. Not all implementations must implement all features, but a majority is required. | No vetos from the Zarr Implementations Council | . Each implementation has the right to veto a ZEP if it would cause severe problems for that implementation. Read more about Zarr Implementation Council. For other ZEPs . For ZEPs, other than specifications, the author(s) must form a consensus around their proposal. They may refer to Discussing a ZEP section to pick an avenue for discussion and engaging the community. When you think ZEP is ready to accept, create a new discussion in zarr-specs for Specifications ZEPs using ‘General’ and in zarr-developers/zep for other ZEPs and as the category with a subject like: . Proposal to accept ZEP &lt;number&gt;: &lt;title&gt; . In the body of your discussion, you should: . | Link to the latest version of ZEP, | Briefly describe any major points of contention and how they were resolved, | Include a sentence like: “If there are no substantive objections within 7 days from this post, then the ZEP will be accepted; | . After you create the discussion, you should make sure to link the newly created thread in the Discussion section of the ZEP, so that people can find it later. Generally, the ZEP author will be the one to create this post, but anyone can do it – the important thing is to make sure that everyone knows when a ZEP is on the verge of acceptance, and give them a final chance to respond. If there’s some special reason to extend this final comment period beyond 7 days, then that’s fine, just say so in the post. You shouldn’t do less than 7 days, because sometimes people are travelling or similar and need some time to respond. There may be a case that a ZEP didn’t attract needed attention towards it, the engagement from the community is low, and 7 days pass by. In this case, the author(s) of the ZEP must make necessary efforts to spread the word about the ZEP through Gitter or using the organisation discussions feature of GitHub or, if needed, creating an additional PR in the community repository. In addition, the author(s) should get in touch with the Zarr Steering Council to prevent the case that the ZEP was accepted due to less participation from the community. If all the above options are exhausted by the author(s), then it’s the responsibility of the Zarr Steering Council to take the final decision on the ZEP. In general, the goal is to make sure that the community has consensus, not provide a rigid policy for people to try to game. When in doubt, err on the side of asking for more feedback and looking for opportunities to compromise. If the final comment period passes without any substantive objections, then the ZEP can officially be marked Accepted. You should create a follow-up discussion thread in zarr-developers/zep repository notifying everyone (celebratory emoji optional but encouraged 🎉✨), and then update the ZEP by setting its :Status: to Accepted, and it’s :Resolution: header to a link to your follow-up discussion thread. If there are substantive objections, then the ZEP remains in Draft state, discussion continues as normal, and it can be proposed for acceptance again later once the objections are resolved. In unusual cases, the Zarr Steering Council may be asked to decide whether a controversial ZEP is Accepted. Maintenance . In general, SPEC ZEPs are no longer modified after they have reached the Final state. The changes made to the Zarr’s core specification in the zarr-specs repository are considered the ultimate reference. However, finalised SPEC ZEPS may be updated with minor changes as needed. Process ZEPs may be updated over time to reflect changes to development practices and other details. The precise process followed in these cases will depend on the nature and purpose of the ZEP being updated. ",
-    "url": "http://localhost:4000/zeps/zeps/active/ZEP0000.html#zep-workflow",
-    "relUrl": "/zeps/active/ZEP0000.html#zep-workflow"
+    "url": "http://localhost:4000/zeps/active/ZEP0000.html#zep-workflow",
+    "relUrl": "/active/ZEP0000.html#zep-workflow"
   },"5": {
     "doc": "ZEP0000",
     "title": "ZEP Format",
     "content": "ZEPs are UTF-8 encoded text files using the reStructureText format. Please see the ZEP X - Template and Instructions file and the reStructuredTextPrimer for more information. Header Preamble . :Author: &lt;list of authors’ real names and email addresses&gt; :Status: &lt; Draft | Active | Accepted | Deferred | Rejected | Withdrawn | Final | Superseded &gt; :Type: &lt;Specification | Process | Informational&gt; :Created: &lt;date created on, in dd-mmm-yyyy format&gt; :Require: &lt;Previous ZEP number&gt; :Zarr-Version: &lt;version number&gt; :Replaces: &lt;ZEP number&gt; :Replaced-By: &lt;ZEP number&gt; :Resolution: &lt;Link to discussion thread&gt; . The Author header lists the names and the email addresses of all the authors of the ZEP. The format of the Author header value must be: . Random J. User &lt;address@dom.ain&gt; . ",
-    "url": "http://localhost:4000/zeps/zeps/active/ZEP0000.html#zep-format",
-    "relUrl": "/zeps/active/ZEP0000.html#zep-format"
+    "url": "http://localhost:4000/zeps/active/ZEP0000.html#zep-format",
+    "relUrl": "/active/ZEP0000.html#zep-format"
   },"6": {
     "doc": "ZEP0000",
     "title": "Discussion",
     "content": "https://github.com/orgs/zarr-developers/discussions . ",
-    "url": "http://localhost:4000/zeps/zeps/active/ZEP0000.html#discussion",
-    "relUrl": "/zeps/active/ZEP0000.html#discussion"
+    "url": "http://localhost:4000/zeps/active/ZEP0000.html#discussion",
+    "relUrl": "/active/ZEP0000.html#discussion"
   },"7": {
     "doc": "ZEP0000",
     "title": "Copyright",
     "content": "This document has been placed in the public domain. ",
-    "url": "http://localhost:4000/zeps/zeps/active/ZEP0000.html#copyright",
-    "relUrl": "/zeps/active/ZEP0000.html#copyright"
+    "url": "http://localhost:4000/zeps/active/ZEP0000.html#copyright",
+    "relUrl": "/active/ZEP0000.html#copyright"
   },"8": {
     "doc": "ZEP0000",
     "title": "ZEP0000",
     "content": " ",
-    "url": "http://localhost:4000/zeps/zeps/active/ZEP0000.html",
-    "relUrl": "/zeps/active/ZEP0000.html"
+    "url": "http://localhost:4000/zeps/active/ZEP0000.html",
+    "relUrl": "/active/ZEP0000.html"
   },"9": {
     "doc": "ZEP0001",
     "title": "ZEP 1 - Zarr specification version 3",
     "content": "Authors: . | Alistair Miles (@alimanfoo), Wellcome Sanger Institute . | Jonathan Striebel (@jstriebel), Scalable Minds . | . Status: Draft . Type: Specification . Created: 2022-05-23 . ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#zep-1---zarr-specification-version-3",
-    "relUrl": "/zeps/draft/ZEP0001.html#zep-1---zarr-specification-version-3"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#zep-1---zarr-specification-version-3",
+    "relUrl": "/draft/ZEP0001.html#zep-1---zarr-specification-version-3"
   },"10": {
     "doc": "ZEP0001",
     "title": "Abstract",
     "content": "This ZEP proposes a new major version of the core specification which defines how to store and retrieve Zarr data. The ZEP also proposes a new framework for modularising specifications of codecs, storage systems and extensions. ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#abstract",
-    "relUrl": "/zeps/draft/ZEP0001.html#abstract"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#abstract",
+    "relUrl": "/draft/ZEP0001.html#abstract"
   },"11": {
     "doc": "ZEP0001",
     "title": "Motivation and Scope",
     "content": "The Zarr specification version 2 [ZARR2SPEC] (hereafter “Zarr v2”) has been widely adopted and implemented in several programming languages. It has enabled the use of cloud and distributed computing to process a variety of large and challenging datasets, particularly in the scientific domain. It has also provided a vehicle for experimentation and innovation in the field of data storage for high-performance distributed computing. As usage of Zarr has grown and broadened, several limitations of Zarr v2 have surfaced. These include: . | Interoperability. Zarr v2 has been implemented in Python, C, C++, Julia, Java and JavaScript. However, there is not feature parity across all implementations. Implementations are also not currently available for some important languages, such as R. This is in part because the Zarr v2 spec was originally developed together with the Python implementation, which itself leans heavily on the use of NumPy concepts and machinery. A more language-agnostic approach to the core specification, together with some slimming down of the specification, would help to achieve complete implementations with full interoperobility across major programming languages. | Extensibility. Zarr is increasingly being used for storage of very large and keystone scientific datasets. If this trend continues, interoperability and stability of the Zarr ecosystem will be vital, to allow these datasets to be utilised to their full potential. At the same time, large-scale array data storage is a very active area of innovation, and there remain many opportunities to improve performance, scalability and resilience for I/O-bound high-performance distributed computing. To balance these demands for stability and innovation, some framework for community exploration and development of Zarr extensions is needed, so that innovation can happen in a coordinated way with predictable consequences and behaviour of implementations which may not support all extensions. | High-latency storage. Zarr v2 was originally developed to support local file system storage. Because of this, the design of Zarr v2 implicitly made assumptions about the performance characteristics of the underlying storage technology, such as low latency for storage operations to list directories and check existence of files. Fortunately, certain features of Zarr v2 still enabled other storage systems to be used, such as cloud object stores, and this ability to utilise a variety of different underlying storage systems has been very valuable across a range of use cases. However, performance of certain operations can degrade significantly with some storage technologies, particularly systems with relatively high latency per operation, such as cloud object stores. This limitation has been worked around through the use of consolidated metadata, but this workaround introduces other limitations, such as additional complexity when adding or modifying data. | Storage layout flexibility. Zarr v2 adopts a simple storage model where each chunk is encoded and then written to a single storage object. This simplicity makes implementation easier, but presents some practical challenges. For example, for large datasets this can generate a very large number of storage objects, which does not work well for certain storage technologies. Also, this forces one retrieval operation per chunk, which can be suboptimal where there are many chunks that are often read together, and/or where different access patterns need to be accommodated. | . These limitations have motivated the proposal described here to define a new major version of the Zarr core specification, together with a new modular specification framework. Normally, it is better to introduce changes in small pieces, allowing each to be evaluated and discussed in isolation. However, addressing the limitations described above could not be done without introducing backwards-incompatible changes into the core specification, and thus multiple such changes are combined here, in an attempt to minimise the overall disruption to the ecosystem and the community. ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#motivation-and-scope",
-    "relUrl": "/zeps/draft/ZEP0001.html#motivation-and-scope"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#motivation-and-scope",
+    "relUrl": "/draft/ZEP0001.html#motivation-and-scope"
   },"12": {
     "doc": "ZEP0001",
     "title": "Usage and Impact",
     "content": "This ZEP and the associated specifications have the following intended outcomes: . | Facilitate implementation of a core specification with feature parity and full interoperability across all major programming languages. | Accelerate innovation by facilitating the exploration, development, implementation and evaluation of Zarr systems with support for novel encoding technologies, storage technologies and features by a broader community. | Ensure reasonable performance characteristics of all Zarr implementations across a variety of different underlying storage technologies, including storage with high latency per operation. | Improve the performance characteristics of Zarr implementations for data with a very large number of chunks and/or with a variety of common access patterns. | . Adopting this ZEP would have the following disruptive impacts on the members of the Zarr community: . | Effort and coordination would be required to implement the specifications in all current Zarr software libraries and verify interoperability. | Effort would be required by data producers to migrate to generating data conformant with the new specifications. | Some effort may be required by users of Zarr data and/or Zarr software libraries to learn about and understand the differences in available features and/or how certain features are accessed. | . ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#usage-and-impact",
-    "relUrl": "/zeps/draft/ZEP0001.html#usage-and-impact"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#usage-and-impact",
+    "relUrl": "/draft/ZEP0001.html#usage-and-impact"
   },"13": {
     "doc": "ZEP0001",
     "title": "Backward Compatibility",
     "content": "This ZEP introduces a Zarr core specification version 3, which is backwards-incompatible with the Zarr version 2 specification [ZARR2SPEC]. Implementations of the Zarr version 3 core specification are not required to be able to read or write data conforming to the Zarr version 2 specification, and vice versa. ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#backward-compatibility",
-    "relUrl": "/zeps/draft/ZEP0001.html#backward-compatibility"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#backward-compatibility",
+    "relUrl": "/draft/ZEP0001.html#backward-compatibility"
   },"14": {
     "doc": "ZEP0001",
     "title": "Detailed description",
     "content": "Below is a summary of some of the key features of the proposed new specification and specification framework. Please see the specification drafts for further information, linked below in the specifications section. Modularity . This ZEP proposes a modular specification framework, with the following components: . | Zarr core specification – This specification is the starting point for any Zarr implementation. It defines in an abstract way a format for storing N-dimensional array data. | Zarr extension specifications – This is an open-ended set of specifications which add new features to and/or modify the Zarr format in some way. There is a further breakdown of different extension types, described in more detail below. | Zarr codec specifications – This is an open-ended set of specifications, each of which defines a protocol for encoding and decoding Zarr chunk data. | Zarr store specifications – This is an open-ended set of specifications, each of which defines a mapping from the abstract store API defined in the Zarr core specification to a set of concrete operations for a specific storage technology, such as a POSIX file system or cloud object storage. | . The primary goal of this modularity is to allow specifications of new extensions, codecs and stores to be added over time, without needing any change to the core specification. Note that the core specification allows for decentralised publishing of extension, codec and store specifications. In other words, any individual or organisation may publish such a specification. It is hoped that the majority of such specifications will be published on the zarr-specs website after a review process by the Zarr community, thus providing a common point of discovery and coordination across the community. However, we do not want to obstruct individuals or organisation who need to innovate or experiment or who have specialised needs which are better served by managing and publishing specifications in a different way. Note that we also anticipate that user groups from different domains may wish to publish usage convention specifications, by which we mean specifications that define conventions for the use of Zarr for a particular type of data, such as restrictions and expectations regarding the groups, arrays and attributes that will be found within a Zarr dataset. How these usage convention specifications will be managed, published and used is out of scope for this ZEP. A draft of the Zarr version 3 core specification is available at the following URL: . | https://zarr-specs.readthedocs.io/en/latest/core/v3.0.html | . Note publication of the draft specification on the zarr-specs website preceded establishiment of the ZEP process, and does not imply acceptance of this ZEP. The specification should be considered a proposal at this time, pending acceptance of this ZEP. To illustrate the principle of the other specification types, the following specifications have also been published on the zarr-specs website: . | Codecs . | Stores - File system store . | Array extensions - Filters . | Data types - Datetime data types . | Storage transformers - Sharding storage transformer . | . Note that some of these specifications are not complete at this time. We leave it open at this time whether the scope of this ZEP should be expanded to fully cover all of these specifications, or whether further ZEPs should be created to cover these other specs. Extensibility . This ZEP proposes a number of mechanisms by which the Zarr core protocol can be extended. In general, there are two different kinds of extensions. An extension may add new features to Zarr, in a way that does not invalidate or break any processing of Zarr data to which the extension applies by systems which do not implement the extension. In other words, the use of the extension may be safely ignored by systems which implement only the core specification. Alternatively, an extension may modify or override the Zarr core specification in some way, such that certain processing operations must be aware of and implement the extension, otherwise data will become corrupted or Zarr implementations will encounter unexpected errors. In other words, the use of such an extension must not be ignored by systems which implement only the core specification. If a Zarr system does not implement a given extension, the Zarr core specification describes the situations under which the extension can be ignored and processing can proceed, and conversely where the extension cannot be ignored and processing must terminate. A further grouping of different kinds of extension is defined: . | Generic extensions – These are extensions which apply to the processing of any data within a Zarr hierarchy. | Array extensions – These are extensions which apply to processing of an array within a Zarr hierarchy. | Data type extensions – These are extensions which define a new data type for array items, where the data type is not included in the set of core data types. | Chunk grid extensions – These are extensions which define a new way of dividing array items into chunks. | Chunk memory layout extensions – These are extensions which define a new way of organising the data from an array chunk into a contiguous sequence of bytes. | Storage transformer extensions – These are extensions which define a new storage transformation. | . For each of these kinds of extensions, the core specification defines a mechanism by which the extension is declared in the metadata associated with a Zarr hierarchy or array, such that its use can be discovered by a Zarr implementation, without requiring any out-of-band communication. In other words, a system or user reading Zarr data should not need to “know” anything about the extensions that were used when the data were created, the data are fully self-describing. Scope reduction . In order to facilitate implementation of the core specification across different programming languages, the scope of the specification has been reduced relative to Zarr v2. Note in particular the following: . | The set of core data types is reduced relative to Zarr v2. Only fixed size integer and floating point data types are defined, in addition to a Boolean data type and a fixed length raw data type. Any data types relating to storage of textual data have been left for definition within an extension specification. The “object” data type, which was never included within the Zarr v2 spec but which was implemented in the Python implementation, is also not included – it is suggested that a better approach be found for supporting variable length data types, and defined within a data type extension specification. | Support for filters has been removed from the core specification. It is proposed this be covered in an extension specification. | . Accommodating high-latency storage . With Zarr v2, certain operations that require access to metadata can be pathologically slow when running against data stored in a high-latency storage system such as a cloud object store. These include navigating the structure of a Zarr hierarchy, such as obtaining a list of the child nodes of any given node, or generating a textual representation of an entire hierarchy (e.g., as generated by the tree() function in the Zarr Python implementation). These operations are often required because it is a common use case for user to be interactively exploring the content of a Zarr hierarchy with which they are unfamiliar, and so poor performance seriously affects usability. A workaround for this with Zarr v2 has been the addition of consolidated metadata. This involves packaging all metadata for a hierarchy into a single storage object, which can then be read once. This is a workable solution in many situations, where data are written once and then read many times. However, it introduces some additional complexity for data managers, who need to ensure that consolidated metadata is generated, and then kept in sync with group and array metadata if there are any subsequent changes. The Zarr version 3 core specification redesigns the organisation of data and metadata objects within a Zarr store, in order to better accommodate high latency stores. While this does not completely remove the need for consolidated metadata in all current situations where that is used, it does vastly improve the performance of simple operations to explore the structure and content of a Zarr hierarchy. The new design leverages the fact that, although listing of objects in cloud object stores is still much slower than listing of files in a local file system, all major cloud stores support the ability to list objects with a given prefix, which can be used to reduce the size of the result set and usually returns much faster than listing an entire bucket. It also provides an opportunity to better leverage the support for emulating a directory listing, via providing both a “prefix” and a “delimiter” parameter. The new design separates the metadata and chunk data storage objects via a different key prefix. All metadata objects have the key prefix “/meta” and all chunk data objects have the key prefix “/data”. This allows a faster listing of all metadata keys within a given store. The list of metadata keys is then sufficient to provide some useful information to a user regarding the contents and structure of a Zarr hierarchy. The new design also changes the key suffix for metadata objects. For example, for an array with hierarchy path “/foo/bar”, the key for the corresponding metadata object in Zarr v2 would be “/foo/bar/.zarray”. In Zarr v3 this becomes “/meta/root/foo/bar.array.json”. This change means that all the names and types (array or group) of children of the “/foo” group can be discovered and listed via a single storage operation to list the objects with prefix “/meta/root/foo” and delimiter “/”. ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#detailed-description",
-    "relUrl": "/zeps/draft/ZEP0001.html#detailed-description"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#detailed-description",
+    "relUrl": "/draft/ZEP0001.html#detailed-description"
   },"15": {
     "doc": "ZEP0001",
     "title": "Storage transformers",
     "content": "@@TODO describe introduction of storage transformers, and how these can be used to support more efficient data access via packing of multiple encoded chunks into a single storage object via the sharding extension. ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#storage-transformers",
-    "relUrl": "/zeps/draft/ZEP0001.html#storage-transformers"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#storage-transformers",
+    "relUrl": "/draft/ZEP0001.html#storage-transformers"
   },"16": {
     "doc": "ZEP0001",
     "title": "Related Work",
     "content": "@@TODO . This section should list relevant and/or similar technologies, possibly in other libraries. It does not need to be comprehensive, just list the major examples of prior and relevant art. ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#related-work",
-    "relUrl": "/zeps/draft/ZEP0001.html#related-work"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#related-work",
+    "relUrl": "/draft/ZEP0001.html#related-work"
   },"17": {
     "doc": "ZEP0001",
     "title": "Implementation",
     "content": "@@TODO zarrita . @@TODO zarr v3 support in xtensor . This section lists the major steps required to implement the ZEP. Where possible, it should be noted where one step is dependent on another, and which steps may be optionally omitted. Where it makes sense, each step should include a link to related pull requests as the implementation progresses. Any pull requests or development branches containing work on this ZEP be linked to from here. (A ZEP does not need to be implemented in a single pull request if it makes sense to implement it in discrete phases). ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#implementation",
-    "relUrl": "/zeps/draft/ZEP0001.html#implementation"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#implementation",
+    "relUrl": "/draft/ZEP0001.html#implementation"
   },"18": {
     "doc": "ZEP0001",
     "title": "Alternatives",
     "content": "@@TODO . If there were any alternative solutions to solving the same problem, they should be discussed here, along with a justification for the chosen approach. ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#alternatives",
-    "relUrl": "/zeps/draft/ZEP0001.html#alternatives"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#alternatives",
+    "relUrl": "/draft/ZEP0001.html#alternatives"
   },"19": {
     "doc": "ZEP0001",
     "title": "Discussion",
     "content": "@@TODO . This section should have links related to any discussion regarding the ZEP. It could be GitHub issues and/or discussions. (The links to discussions in past if any, goes in this section.) . ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#discussion",
-    "relUrl": "/zeps/draft/ZEP0001.html#discussion"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#discussion",
+    "relUrl": "/draft/ZEP0001.html#discussion"
   },"20": {
     "doc": "ZEP0001",
     "title": "References and Footnotes",
     "content": ". | [ZARR2SPEC] - https://zarr.readthedocs.io/en/stable/spec/v2.html | . ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#references-and-footnotes",
-    "relUrl": "/zeps/draft/ZEP0001.html#references-and-footnotes"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#references-and-footnotes",
+    "relUrl": "/draft/ZEP0001.html#references-and-footnotes"
   },"21": {
     "doc": "ZEP0001",
     "title": "License",
     "content": "To the extent possible under law, the authors have waived all copyright and related or neighboring rights to ZEP 1. ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html#license",
-    "relUrl": "/zeps/draft/ZEP0001.html#license"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html#license",
+    "relUrl": "/draft/ZEP0001.html#license"
   },"22": {
     "doc": "ZEP0001",
     "title": "ZEP0001",
     "content": " ",
-    "url": "http://localhost:4000/zeps/zeps/draft/ZEP0001.html",
-    "relUrl": "/zeps/draft/ZEP0001.html"
+    "url": "http://localhost:4000/zeps/draft/ZEP0001.html",
+    "relUrl": "/draft/ZEP0001.html"
   },"23": {
     "doc": "about",
     "title": "about",
-    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll . ",
+    "content": "Zarr is a community project to develop specifications and software for storage of large N-dimensional typed arrays, also commonly known as tensors. A particular focus of Zarr is to provide support for storage using distributed systems like cloud object stores, and to enable efficient I/O for parallel computing applications. Zarr is motivated by the need for a simple, transparent, open, and community-driven format that supports high-throughput distributed I/O on different storage systems. Zarr data can be stored in any storage system that can be represented as a key-value store, including most commonly POSIX file systems and cloud object storage but also zip files as well as relational and document databases. See the following GitHub repositories for more information: . | Zarr Python | Zarr Specs | Numcodecs | Z5 | N5 | Zarr.jl | ndarray.scala | . Find us on Gitter, Twitter and GitHub. ",
     "url": "http://localhost:4000/zeps/about/",
     "relUrl": "/about/"
   },"24": {
+    "doc": "accepted ZEPs",
+    "title": "Active ZEPs",
+    "content": "Shows the list of Accepted ZEPs. ",
+    "url": "http://localhost:4000/zeps/accepted_zeps/#active-zeps",
+    "relUrl": "/accepted_zeps/#active-zeps"
+  },"25": {
+    "doc": "accepted ZEPs",
+    "title": "accepted ZEPs",
+    "content": " ",
+    "url": "http://localhost:4000/zeps/accepted_zeps/",
+    "relUrl": "/accepted_zeps/"
+  },"26": {
     "doc": "active ZEPs",
     "title": "Active ZEPs",
     "content": "Shows the list of Active ZEPs. ",
-    "url": "http://localhost:4000/zeps/zeps/active_zeps/#active-zeps",
-    "relUrl": "/zeps/active_zeps/#active-zeps"
-  },"25": {
+    "url": "http://localhost:4000/zeps/active_zeps/#active-zeps",
+    "relUrl": "/active_zeps/#active-zeps"
+  },"27": {
     "doc": "active ZEPs",
     "title": "active ZEPs",
     "content": " ",
-    "url": "http://localhost:4000/zeps/zeps/active_zeps/",
-    "relUrl": "/zeps/active_zeps/"
-  },"26": {
+    "url": "http://localhost:4000/zeps/active_zeps/",
+    "relUrl": "/active_zeps/"
+  },"28": {
     "doc": "draft ZEPs",
     "title": "Draft ZEPs",
     "content": "Shows the list of Draft ZEPs. ",
-    "url": "http://localhost:4000/zeps/zeps/draft_zeps/#draft-zeps",
-    "relUrl": "/zeps/draft_zeps/#draft-zeps"
-  },"27": {
+    "url": "http://localhost:4000/zeps/draft_zeps/#draft-zeps",
+    "relUrl": "/draft_zeps/#draft-zeps"
+  },"29": {
     "doc": "draft ZEPs",
     "title": "draft ZEPs",
     "content": " ",
-    "url": "http://localhost:4000/zeps/zeps/draft_zeps/",
-    "relUrl": "/zeps/draft_zeps/"
-  },"28": {
+    "url": "http://localhost:4000/zeps/draft_zeps/",
+    "relUrl": "/draft_zeps/"
+  },"30": {
     "doc": "home",
     "title": "Zarr Enhancement Proposals (ZEPs)",
     "content": "Community Feedback Process for Zarr Specifications. Propose a new ZEP View it on GitHub . ZEP stands for Zarr Enhancement Proposal. A ZEP is a design document providing information to the Zarr community, describing a modification or enhancement of the Zarr specifications, a new feature for its processes or environment. The ZEP should provide specific proposed changes to the Zarr specification and a narrative rationale for the specification changes. We intend ZEPs to be the primary mechanism for evolving the spec, collecting community input on major issues and documenting the design decision that has gone into Zarr. Contributing . If you wish to contribute to Zarr’s codebase, propose a new ZEP(s), website, blog posts or in any way, please visit Zarr’s GitHub here. You can discuss the change you want to see by opening an issue in the appropriate repository, or if the issue is already present, feel free to submit a pull request. Code of Conduct . ZEPs are governed by Zarr Community’s CODE OF CONDUCT. ",
     "url": "http://localhost:4000/zeps/#zarr-enhancement-proposals-zeps",
     "relUrl": "/#zarr-enhancement-proposals-zeps"
-  },"29": {
+  },"31": {
     "doc": "home",
     "title": "home",
     "content": " ",
     "url": "http://localhost:4000/zeps/",
     "relUrl": "/"
-  },"30": {
-    "doc": "test",
-    "title": "This is a test .md file.",
-    "content": " ",
-    "url": "http://localhost:4000/zeps/zeps/test.html#this-is-a-test-md-file",
-    "relUrl": "/zeps/test.html#this-is-a-test-md-file"
-  },"31": {
-    "doc": "test",
-    "title": "test",
-    "content": " ",
-    "url": "http://localhost:4000/zeps/zeps/test.html",
-    "relUrl": "/zeps/test.html"
   }
 }
