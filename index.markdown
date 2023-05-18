@@ -33,6 +33,7 @@ community input on major issues and documenting the design decision that has
 gone into Zarr.
 
 → This should be displayed!
+→ This should be fine now!
 
 ---
 
